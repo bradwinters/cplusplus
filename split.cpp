@@ -1,3 +1,14 @@
+//  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+//       vector<string> splitter(string stringOftokens) 
+//       
+//  splitter routine accepts a string and creates a vector or words in the string, presummed to be a sentance or space separated tokens, words, numbers etc.
+//  it uses the iterator stringstream and pushes tokens onto a string vector with it returns
+//  its tested here with two ways to print a vector
+//  splitter will be put into a library in the near future.
+//  Could be enhanced to accept optional separator as an overloaded parameter, defaulting to blank separator
+//  Brad Winters    7/26/2019
+//  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #include <vector>
 #include <string>
 #include <sstream>
