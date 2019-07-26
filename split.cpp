@@ -6,18 +6,19 @@ using namespace std;
 
 // accpet a string with white space separated words, return a vector of strings, the words by themselves
  vector<string> splitter(string passedInSentance) {
-   
+
+   // used to debug, elimiate passing of string 
    std::string str("Split me by whitespaces if you think you can");
    std::string buf;                 // Have a buffer string
    std::stringstream ss(passedInSentance);       // Insert the string into a stream
 
    std::vector<std::string> tokens; // Create vector to hold our words
-   cout << "!!!  The sentance I got passed to me is as follows:\n";
-   cout << passedInSentance << endl;
+   // uncomment to test cout << "!!!  The sentance I got passed to me is as follows:\n";
+   // uncomment to test cout << passedInSentance << endl;
 
      int cntr=0;
-      cout << "hello, starting\n";
-      cout << "Input string is " << str << endl;
+   // uncomment to test   cout << "hello, starting\n";
+   // uncomment to test   cout << "Input string is " << str << endl;
          while (ss >> buf){
            tokens.push_back(buf);
            cntr++;
@@ -45,7 +46,7 @@ int main() {
     // Prove it worked by printing out.  Two methods used
     // Method 1: get size of vector, then loop it
     int zis = tokenV.size();
-    cout << "Show tokens, zis is " << zis << endl;
+    // uncomment to test cout << "Show tokens, zis is " << zis << endl;
     for (int i =0; i<zis;i++){
         cout << i << ")" << tokenV[i] << endl;
     }
